@@ -1,1 +1,9 @@
 /models/merges.txt
+/models/CESoftmaxAccuracyEvaluator_softmax_eval_results.csv
+/models/config.json
+/models/pytorch_model.bin
+/models/special_tokens_map.json
+/models/tokenizer.json
+/models/tokenizer_config.json
+/models/vocab.json
+/models/

@@ -1,0 +1,17 @@
+,0
+0,Create Account
+1,Create Or Upload File
+2,Delete Files
+3,Disable Protections
+4,Install App
+5,"Memory Modification (Memory Buffer Errors,Pointer Issues,Type Errors,etc.)"
+6,Password Reset
+7,Change Ownership or Permissions
+8,Modify Configuration
+9,Obtain Sensitive Information: Other Data
+10,Obtain Sensitive Information: Credentials
+11,Read From Memory
+12,Read Files
+13,"Memory Read (Memory Buffer Errors,Pointer Issues,Type Errors,etc.)"
+14,Restart Or Reboot
+15,Write To Existing File
