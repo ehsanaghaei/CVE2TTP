@@ -1,16 +1,10 @@
-import json
 import logging
-import math
+import logging
 import random
 from collections import defaultdict
 
-import pandas as pd
-from sentence_transformers import InputExample, CrossEncoder
-from sentence_transformers.cross_encoder.evaluation import CECorrelationEvaluator, CEBinaryAccuracyEvaluator, \
-    CEBinaryClassificationEvaluator, CERerankingEvaluator, CESoftmaxAccuracyEvaluator
-
-from sklearn.metrics import confusion_matrix, classification_report, precision_recall_fscore_support, accuracy_score
-from transformers import RobertaTokenizerFast
+from sentence_transformers import InputExample
+from sklearn.metrics import confusion_matrix, precision_recall_fscore_support, accuracy_score
 
 logging.warning('Started')
 import os
@@ -50,7 +44,6 @@ def merge_dictionaries(dict_list):
     return op_dict
 
 def make_multihot(lbl_list, num_classes, to_list=True, device='cuda'):
-    import numpy as np
     import torch
     from torch import nn
     if type(lbl_list) != list:
@@ -324,8 +317,6 @@ class Create_TrainDataset:
         return lst
 
     def nltk_tag_to_wordnet_tag(self, nltk_tag):
-        import nltk
-        from nltk.stem import WordNetLemmatizer
         from nltk.corpus import wordnet
         if nltk_tag.startswith('J'):
             return wordnet.ADJ

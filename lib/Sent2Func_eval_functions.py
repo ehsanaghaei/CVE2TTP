@@ -1,6 +1,6 @@
 import nltk
 
-from lib.VO2FuncType_functions import sort_dict
+from lib.Sent2Func_functions import sort_dict
 
 lemmatizer = nltk.WordNetLemmatizer()
 
