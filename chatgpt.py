@@ -3,7 +3,7 @@ import openai
 from lib.functions import read_txt
 KEY = read_txt(r"./configs/openai_key.key")
 
-openai.api_key = "<YOUR_KEY>"
+openai.api_key = KEY
 
 prompt = "Hello, how are you today?"
 model_engine = "ada"
