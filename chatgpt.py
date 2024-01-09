@@ -1,9 +1,9 @@
 import openai
 
 from lib.functions import read_txt
-KEY = read_txt(r"/media/ea/SSD2/Projects/CVE2TTP/configs/openai_key.key")
+KEY = read_txt(r"./configs/openai_key.key")
 
-openai.api_key = "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"
+openai.api_key = "<YOUR_KEY>"
 
 prompt = "Hello, how are you today?"
 model_engine = "ada"
